@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  renderer:
+    build: .
+    environment:
+      - JS_ENABLED=false
+    ports:
+      - 3000:80

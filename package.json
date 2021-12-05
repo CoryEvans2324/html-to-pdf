@@ -1,0 +1,15 @@
+{
+  "name": "html-to-pdf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Service to render webpages to PDF documents",
+  "author": "Cory Evans",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^12.0.1"
+  }
+}
