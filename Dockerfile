@@ -9,11 +9,16 @@ RUN set -x \
 	ttf-freefont \
 	chromium
 
-ADD package.json /package.json
-ADD yarn.lock /yarn.lock
+WORKDIR /app
+
+ADD package.json package.json
+ADD yarn.lock yarn.lock
+ADD tsconfig.json tsconfig.json
 
 RUN yarn
 
-ADD . .
+ADD src src/
+
+RUN yarn build
 
 ENTRYPOINT [ "yarn", "start" ]

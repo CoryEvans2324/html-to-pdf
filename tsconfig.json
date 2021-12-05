@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"outDir": "./build",
+		"target": "ES5",
+		"module": "CommonJS",
+		"moduleResolution": "classic",
+		"esModuleInterop": true
+	},
+	"include": [
+		"src/**/*.ts"
+	]
+}
