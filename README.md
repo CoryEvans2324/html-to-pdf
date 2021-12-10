@@ -23,3 +23,8 @@ Environment Variables
 |--:|:--|
 |PORT| Port the express server listens on.<br>Default: `3000` |
 |JAVASCRIPT_ENABLED| Whether javascript is enabled in the headless browser page.<br>Default: `false`<br>Set to `true` to enable JS. |
+
+Make a request to the service:
+```bash
+wget -O doc.pdf http://localhost:3000/?url=https://google.com
+```
